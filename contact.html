@@ -18,6 +18,7 @@
 	<!-- CSS Files -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/material-kit.css" rel="stylesheet"/>
+	<link href="assets/css/demo.css" rel="stylesheet" />
 
 </head>
 
@@ -32,7 +33,16 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="http://ujwalp15.github.io">Ujwal P</a>
+				<a href="http://github.com/ujwalp15/ujwalp15.github.io" target="_blank">
+					<div class="logo-container">
+						<div class="logo">
+							<img src="assets/img/logo.gif" class="img-circle" alt="Ujwalp15 Logo" rel="tooltip" title="<b>Android Custom Rom Developer and Maintainer</b>" data-placement="bottom" data-html="true">
+						</div>
+						<div class="brand">
+							<h6><b>Ujwal P</b></h6>
+						</div>
+					</div>
+				</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="navigation-example">
@@ -178,5 +188,21 @@
 
 <!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
 <script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$().ready(function(){
+	// the body of this function is in assets/material-kit.js
+	materialKit.initSliders();
+	window_width = $(window).width();
+
+	if (window_width >= 992){
+		big_image = $('.wrapper > .header');
+
+		$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+	}
+
+});
+</script>
 
 </html>
