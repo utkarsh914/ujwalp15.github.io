@@ -174,7 +174,8 @@
 	</div>
 
 
-</body>
+
+
 <!--   Core JS Files   -->
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
@@ -190,7 +191,7 @@
 <script src="assets/js/material-kit.js" type="text/javascript"></script>
 
 <!-- Javascript file for contact form -->
-<script src="assets/js/form.js" type="text/javascript"></script>
+<!--<script src="assets/js/form.js" type="text/javascript"></script>-->
 
 <script type="text/javascript">
 
@@ -207,5 +208,59 @@ $().ready(function(){
 
 });
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script>
+   
+   
+   //For the contact form
+function submitForm(form){
+    var url = form.attr("action");
+    var formData = $(form).serializeArray();
+    $.post(url, formData).done(function (data) {
+        alert(data);
+
+    });
+}
+
+$("#contact_form").on('submit', function (event){
+
+	event.preventDefault();
+
+      submitForm($("#contact_form"));
+})
+
+   
+   
+   
+   
+   
+   
+   
+   </script>
+
+</body>
+
 
 </html>
