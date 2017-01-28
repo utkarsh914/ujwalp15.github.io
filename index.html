@@ -155,7 +155,7 @@
 						<div class="col-md-8 col-md-offset-2">
 							<h2 class="text-center title">Work with me</h2>
 							<h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact me about any further collaboration. I will responde get back to you in a couple of hours.</h4>
-							<form class="contact-form" method="POST" action="contact.php">
+							<form id="contact_form" class="contact-form" method="POST" action="http://ujwalp15.esy.es/contact.php">
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group label-floating">
@@ -248,6 +248,26 @@ $().ready(function(){
 	}
 
 });
+</script>
+<script>
+
+
+//For the contact form
+function submitForm(form){
+ var url = form.attr("action");
+ var formData = $(form).serializeArray();
+ $.post(url, formData).done(function (data) {
+		 alert(data);
+
+ });
+}
+
+$("#contact_form").on('submit', function (event){
+
+event.preventDefault();
+
+	 submitForm($("#contact_form"));
+})
 </script>
 
 </html>
