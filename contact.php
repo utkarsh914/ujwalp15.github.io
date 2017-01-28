@@ -1,7 +1,7 @@
-<?php 
-
+<?php
+header('Access-Control-Allow-Origin: *');
 if(isset($_POST['name'])){
-       
+
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
@@ -22,6 +22,6 @@ if(mail($recipient, $subject, $formcontent, $mailheader)) {
 }
 
 
-   
+
 
 ?>
