@@ -1,0 +1,73 @@
+body{
+	margin: 0; padding:0;
+}
+.phone-body{
+	height: 94vh; width: 80vw;
+	background-color: black;
+	border-radius: 3vh;
+	position: absolute;
+	margin: 3vh 10vw;
+}
+.phone-display{
+	height: 83vh; width: 76vw;
+	background: lavender;
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+}
+.home-btn{
+	background-image: url("btn-home.jpg");
+	background-size: cover;
+	position: absolute; bottom: 1vh;
+	display: inline-block; height: 5vh; width: 5vh; border-radius: 50%;
+	margin: auto 47%; cursor: pointer;
+}
+.icon-container{
+	position: absolute; bottom: 1vh;
+	height: 12vh; width: 100%;
+}
+.icon{
+	width: 10vh; height: 10vh;
+	cursor: pointer;
+}
+#dialer-display{
+	height: 83vh; width: 76vw;
+	background: mediumseagreen;
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+	display: none;
+}
+#contacts-display{
+	height: 83vh; width: 76vw;
+	background: mediumseagreen;
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+	display: none;
+}
+#google-display{
+	height: 83vh; width: 76vw;
+	background: mediumseagreen;
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+	display: none;
+}
+#chrome-display{
+	height: 83vh; width: 76vw;
+	background: mediumseagreen;
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+	display: none;
+}
+#news-display{
+	height: 83vh; width: 76vw;
+	background: mediumseagreen;
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+	display: none;
+}
+#settings-display{
+	height: 83vh; width: 76vw;
+	background: mediumseagreen;
+	border-radius: 2vh;
+	position: absolute; top: 4vh; left:2vw;
+	display: none;
+}

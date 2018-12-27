@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Android Tab</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jscript.js"></script>
+</head>
+<body>
+<div class="phone-body">
+<button class="home-btn" onclick="document.getElementById('google-display').style.display='none'"></button>
+<div class="phone-display">
+	<table class="icon-container" style="width:">
+		<tr>
+			<td style="width: 22%"></td>
+			<td><img src="http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/Phone-icon.png" alt="Chrome" class="icon" id='dialer' onclick="document.getElementById('dialer-display').style.display='block'" /></td>
+			<td><img src="http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/Contacts-icon.png" alt="Contacts" class="icon" id='contacts' /></td>
+			<td><img src="http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/Google-icon.png" alt="Google" class="icon" id='google' onclick="document.getElementById('google-display').style.display='block'" /></td>
+			<td><img src="https://cdn1.iconfinder.com/data/icons/appicns/513/appicns_Chrome.png" alt="Browser" class="icon" id='chrome' /></td>
+			<td><img src="http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/News-And-Weather-icon.png" alt="News" class="icon" id='news' /></td>
+			<td><img src="http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/Settings-icon.png" alt="Browser" class="icon" id='settings' /></td>
+			<td style="width: 22%"></td>
+		</tr>
+	</table>
+
+
+</div>
+<div id="dialer-display" class="closable"></div>
+<div id="contacts-display" class="closable"></div>
+<div id="google-display" class="closable">
+	<iframe src="https://www.google.com" width="100%" height="100%"></iframe>
+</div>
+<div id="chrome-display" class="closable"></div>
+<div id="news-display" class="closable"></div>
+<div id="settings-display" class="closable"></div>
+</div>
+</div>
+</body>
+</html>
