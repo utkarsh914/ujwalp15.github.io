@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obiettivo | Photoraphy club NITS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	
+	<!--Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="topnav">
+	<a href="#home">Home</a>
+	<a href="#about">About</a>
+	<a href="#events">Events</a>
+	<a href="#gallery">Gallery</a>
+	<a href="#team">Team</a>
+	<a href="#contact">Contact</a>
+</div>
+<div class="parallax-container"></div>
+<div class="container-full" id="home">
+	<div id="name-container">
+		<h1>Obiettivo</h1>
+		<p>OFFICIAL PHOTOGRAPHY CLUB OF NIT SILCHAR</p>
+	</div>
+</div>
+<div class="container-full" id="about">
+	<h1>About Us</h1>
+	<p>Gyansagar is a social service wing of NIT Silchar, volunteered by the students of institute which is encouraged and approved by Prof. (Dr) N.V.Deshpander, Director, NIT Silchar. Since last five years, Gyansagar has put its effort towards the development of the society. The development is in terms of general education, IT education, health awareness, job-opportunity awareness, exploring the inherent qualities of kids in villages, etc.</p>
+	<p>Gyansagar was started in the year 2009 by a group of students led by Mr. Aditya Choudhary, an electrical engineering 2012 passout student from NITS. Since then, it has taken huge leaps to become a social organization which benefits the nearby villages and communities near NIT Silchar. It had been headed by the dynamic leadership of Prof. (Dr) A. K. Sil, Professor, Department of Chemistry, NIT Silchar, since its establishment. </p>
+</div>
+<div class="container-full" id="events">
+	<h1>Events</h1>
+	<div class="event-img-container">
+		<div class="workshop">
+			<img id="workshop-1" src="images/workshop-2.png">
+			<img id="workshop-2" src="images/workshop-1.jpg">
+			<h2>Participate in Workshops</h2>
+		</div>
+		<div class="competition">
+			<img src="images/competition.jpg">
+			<h2>Compete among others</h2>
+		</div>
+	</div>	
+</div>
+<div class="container-full" id="events-2">
+	<div class="event-2-img-container">
+		<div class="event-coverage">
+			<img id="event-coverage-img" src="images/event-coverage.jpg">
+			<h2>Cover in-campus events</h2>
+		</div>
+		<div class="photowalk">
+			<img id="photowalk-1" src="images/photowalk.jpg">
+			<h2>Photowalks</h2>
+		</div>
+	</div>
+</div>
+<div class="container-full" id="gallery">
+	<h1>Gallery</h1>
+	<div class="id" id="id-1" onclick="document.getElementById('carousal-spark').style.display='block';alert('Click the 1st dot to start displaying carousal. There is a bug here! I will try to catch it.')"></div>
+	<div class="id" id="id-2" onclick="document.getElementById('carousal-incand').style.display='block';alert('Click the 1st dot to start displaying carousal. There is a bug here! I will try to catch it.')"></div>
+	<div class="id" id="id-3" onclick="document.getElementById('carousal-tecnoesis').style.display='block';alert('Click the 1st dot to start displaying carousal. There is a bug here! I will try to catch it.')"></div>
+</div>
+<div class="modal" id="carousal-spark"><!-- modal start -->
+	<span onclick="document.getElementById('carousal-spark').style.display='none'"class="close-button display-topright">&times;</span>
+	<div class="carousal-container modal-content">
+		<header>
+			<h1>Spark '18</h1>
+		</header>
+		<img class="slideSpark" src="images/spark/1.jpg">
+		<img class="slideSpark" src="images/spark/2.jpg">
+		<img class="slideSpark" src="images/spark/3.jpg">
+		<img class="slideSpark" src="images/spark/4.jpg">
+		<div class="carousal-buttons" style="width:100%">
+    		<div onclick="plusDivsSpark(-1)" class="left-modal-buttons">&#10094;</div>
+    		<div onclick="plusDivsSpark(1)" class="right-modal-buttons">&#10095;</div>
+    		<span class="badge demo-i" onclick="currentDivSpark(1)"></span>
+    		<span class="badge demo-i" onclick="currentDivSpark(2)"></span>
+    		<span class="badge demo-i" onclick="currentDivSpark(3)"></span>
+    		<span class="badge demo-i" onclick="currentDivSpark(4)"></span>
+    	</div>
+	</div>
+</div> <!-- modal end -->
+
+<div class="modal" id="carousal-tecnoesis"><!-- modal start -->
+	<span onclick="document.getElementById('carousal-tecnoesis').style.display='none'"class="close-button display-topright">&times;</span>
+	<div class="carousal-container modal-content">
+		<header>
+			<h1>Tecnoesis '18</h1>
+		</header>
+		<img class="slideTech" src="images/tecnoesis/1.jpg">
+		<img class="slideTech" src="images/tecnoesis/2.jpg">
+		<img class="slideTech" src="images/tecnoesis/3.jpg">
+		<img class="slideTech" src="images/tecnoesis/4.jpg">
+		<div class="carousal-buttons" style="width:100%">
+    		<div onclick="plusDivsTech(-1)" class="left-modal-buttons">&#10094;</div>
+    		<div onclick="plusDivsTech(1)" class="right-modal-buttons">&#10095;</div>
+    		<span class="badge demo-j" onclick="currentDivTech(1)"></span>
+    		<span class="badge demo-j" onclick="currentDivTech(2)"></span>
+    		<span class="badge demo-j" onclick="currentDivTech(3)"></span>
+    		<span class="badge demo-j" onclick="currentDivTech(4)"></span>
+    	</div>
+	</div>
+</div> <!-- modal end -->
+<div class="modal" id="carousal-incand"><!-- modal start -->
+	<span onclick="document.getElementById('carousal-incand').style.display='none'"class="close-button display-topright">&times;</span>
+	<div class="carousal-container modal-content">
+		<header>
+			<h1>Incandescence'18</h1>
+		</header>
+		<img class="slideIncand" src="images/incand/1.jpg">
+		<img class="slideIncand" src="images/incand/2.jpg">
+		<img class="slideIncand" src="images/incand/3.jpg">
+		<img class="slideIncand" src="images/incand/4.jpg">
+		<div class="carousal-buttons" style="width:100%">
+    		<div onclick="plusDivsIncand(-1)" class="left-modal-buttons">&#10094;</div>
+    		<div onclick="plusDivsIncand(1)" class="right-modal-buttons">&#10095;</div>
+    		<span class="badge demo-k" onclick="currentDivIncand(1)"></span>
+    		<span class="badge demo-k" onclick="currentDivIncand(2)"></span>
+    		<span class="badge demo-k" onclick="currentDivIncand(3)"></span>
+    		<span class="badge demo-k" onclick="currentDivIncand(4)"></span>
+    	</div>
+	</div>
+</div> <!-- modal end -->
+
+
+<div class="container-full perspective" id="team">
+	<h1>Core members</h1>
+	<div class="team-container" id="team-1">
+		<img src="images/team/mike.jpg">
+		<h2>Mike Ermentraugh</h2>
+	</div>
+	<div class="team-container" id="team-2">
+		<img src="images/team/jesse.jpg">
+		<h2>Jesse Pinkman</h2>
+	</div>
+	<div class="team-container" id="team-3">
+		<img src="images/team/walter.jpg">
+		<h2>Walter White</h2>
+	</div>
+	<div class="team-container" id="team-4">
+		<img src="images/team/gustavo.jpg">
+		<h2>Gustavo Fring</h2>
+	</div>
+	<div class="team-container" id="team-5">
+		<img src="images/team/skyler.jpg">
+		<h2>Skyler White</h2>
+	</div>
+</div>
+<div class="container-full" id="contact">
+	<h1>Contact</h1>
+	<p>Website designed and built by Utkarsh Tiwari</p>
+</div>
+</body>
+</html>
