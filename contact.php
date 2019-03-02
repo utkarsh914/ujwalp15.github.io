@@ -1,27 +1,10 @@
 <?php
-header('Access-Control-Allow-Origin: *');
-if(isset($_POST['name'])){
+// the message
+$message = "First line of text\nSecond line of text";
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-$formcontent="From: $name \n Message: $message";
-$recipient = "utiwari914@gmail.com";
-$subject = "Contact Form";
-$mailheader = "From: $email \r\n";
+// use wordwrap() if lines are longer than 70 characters
+$message = wordwrap($message,70);
 
-
-
-if(mail($recipient, $subject, $formcontent, $mailheader)) {
-    echo "Thank You for contacting me, I will get in touch with you shortly!";
-} else {
-   die("Error!");
-}
-
-
-}
-
-
-
-
+// send email
+mail("utiwari914@gmail.com","My subject Test",$message);
 ?>
