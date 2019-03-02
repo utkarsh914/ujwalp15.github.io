@@ -1,8 +1,8 @@
 <?php
 // the message
-$name = $_REQUEST['name'];
-$email = $_REQUEST['email'];
-$message = $_REQUEST['message'];
+$name = $_PUT['name'];
+$email = $_PUT['email'];
+$message = $_PUT['message'];
 $formcontent="From: $name \n Message: $message";
 $recipient = "utiwari914@gmail.com";
 $subject = "Contact Form";
