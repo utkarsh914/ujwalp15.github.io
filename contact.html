@@ -4,49 +4,16 @@
 	<meta charset="utf-8" />
 	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
 	<title>Contact | Utkarsh Tiwari</title>
-
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
 </head>
-
 <body>
 
-						<form method="post" action="contact.php">
-								
-							
-
-										<input type="text" name="name" placeholder="First Name">
-										<input type="text" name="email" placeholder="example@domain.com">
-										<textarea rows="4" name="message" placeholder="message"></textarea>
-										<input name="submit" type="submit" value="Send!">
-							
-							</form>
-						
-
-
-
-<script>
-
-
-//For the contact form
-function submitForm(form){
-    var url = form.attr("action");
-    var formData = $(form).serializeArray();
-    $.post(url, formData).done(function (data) {
-        alert(data);
-
-    });
-}
-
-$("#contact_form").on('submit', function (event){
-
-	event.preventDefault();
-
-      submitForm($("#contact_form"));
-})
-   </script>
-
+	<form method="get" action="contact.php">
+		<input type="text" name="name" placeholder="First Name">
+		<input type="text" name="email" placeholder="example@domain.com">
+		<textarea rows="4" name="message" placeholder="message"></textarea>
+		<input name="submit" type="submit" value="Send!">
+	</form>
 </body>
-
-
 </html>
