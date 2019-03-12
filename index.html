@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
 	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/material-kit.css" rel="stylesheet"/>
 	<link href="assets/css/demo.css" rel="stylesheet" />
@@ -259,6 +260,25 @@
 									</div>
 								</div>
 								<!-- End Profile Tabs -->
+		
+								<div class="col-md-6 col-md-offset-3">
+									<div class="profile-tabs">
+										<div class="nav-align-center">
+											<ul class="nav nav-pills" role="tablist">
+												<li class="active">
+													<a onclick="document.getElementById('detectDeviceModal').style.display='block';detectDevice()">
+														<i class="material-icons">smartphone</i>
+														Detect Device
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+		
+		
+		
+		
 							</div>
 						</div>
 					</div>
@@ -268,12 +288,14 @@
 
 		</div>
 
-<div class="w3-modal" id="eie">
-	<div class="w3-modal-content w3-animate-zoom w3-card-4">
-		<header class="w3-container w3-indigo">
-			<span onclick="document.getElementById('eie').style.display='none'"class="w3-button w3-display-topright">&times;</span>
-			<h4>Detected Device is: </h4>
+<div class="w3-modal" id="detectDeviceModal">
+	<div class="w3-modal-content w3-animate-zoom w3-card-4" >
+		<header class="w3-container w3-indigo" >
+			<span onclick="document.getElementById('detectDeviceModal').style.display='none'"class="w3-button w3-display-topright">&times;</span>
+			<h4>Device Detector </h4>
 		</header>
+		<div id="displayDevice" style="text-align: center; font-size: 20px;"></div>
+		<footer class="w3-container w3-indigo"><p> </p></footer>
 		<footer class="w3-container w3-indigo"><p> </p></footer>
 		<footer class="w3-container w3-indigo"><p> </p></footer>
 	</div>
@@ -306,6 +328,14 @@
 			$(window).on('scroll', materialKitDemo.checkScrollForParallax);
 		}
 	});
+	</script>
+
+	<script type="text/javascript">
+		function detectDevice() {
+		var txt = "";
+		txt += "<h4><b>Detected device is</b></h4>" + "<h6>" + navigator.userAgent + "</h6>";
+		document.getElementById('displayDevice').innerHTML = txt;
+	}
 	</script>
 
 	</html>
