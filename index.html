@@ -108,7 +108,7 @@
 						</div>
 					</div>
 					<div class="description text-center">
-						<h4>18 year old guy. Like to develop ROMs, kernels, and other stuff. Know some basic coding. Noob😛 </h4>
+						<h4>17 year old guy. Like to develop ROMs, kernels, and other stuff. Know some basics of coding. Noob Hacker 😛 </h4>
 					</div>
 
 					<div class="section text-center">
@@ -266,7 +266,7 @@
 										<div class="nav-align-center">
 											<ul class="nav nav-pills" role="tablist">
 												<li class="active">
-													<a onclick="document.getElementById('detectDeviceModal').style.display='block';detectDevice()">
+													<a onclick="document.getElementById('detectDeviceModal').style.display='block';detectDevice()" style="cursor: pointer;">
 														<i class="material-icons">smartphone</i>
 														Detect Device
 													</a>
@@ -290,14 +290,14 @@
 
 <div class="w3-modal" id="detectDeviceModal">
 	<div class="w3-modal-content w3-animate-zoom w3-card-4" style="top: 20%;">
-		<header class="w3-container w3-indigo" >
+		<header class="w3-container w3-purple" >
 			<span onclick="document.getElementById('detectDeviceModal').style.display='none'"class="w3-button w3-display-topright">&times;</span>
 			<h4>Device Detector </h4>
 		</header>
 		<div id="displayDevice" style="text-align: center; font-size: 20px;"></div>
-		<footer class="w3-container w3-indigo"><p> </p></footer>
-		<footer class="w3-container w3-indigo"><p> </p></footer>
-		<footer class="w3-container w3-indigo"><p> </p></footer>
+		<footer class="w3-container w3-purple"><p> </p></footer>
+		<footer class="w3-container w3-purple"><p> </p></footer>
+		<footer class="w3-container w3-purple"><p> </p></footer>
 	</div>
 </div>
 
@@ -333,7 +333,7 @@
 	<script type="text/javascript">
 		function detectDevice() {
 		var txt = "";
-		txt += "<h4><b>Detected device is</b></h4>" + "<p>" + navigator.userAgent + "</p>";
+		txt += "<h4>Detected device is</h4>" + "<p>" + navigator.userAgent + "</p>";
 		document.getElementById('displayDevice').innerHTML = txt;
 	}
 	</script>
