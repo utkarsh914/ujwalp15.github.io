@@ -108,7 +108,7 @@
 						</div>
 					</div>
 					<div class="description text-center">
-						<h4>17 year old guy. Like to develop ROMs, kernels, and other stuff. Know some basics of coding. Noob Hacker 😛 </h4>
+						<h4>18 year old guy. Like to develop ROMs, kernels, and other stuff. Know some basics of coding. Noob 😛 </h4>
 					</div>
 
 					<div class="section text-center">
@@ -333,7 +333,11 @@
 	<script type="text/javascript">
 		function detectDevice() {
 		var txt = "";
-		txt += "<h4>Detected device is</h4>" + "<p>" + navigator.userAgent + "</p>";
+		var details = navigator.userAgent;		
+		var andVer = details.match(/Android \d.\d.\d/); 
+		//var andVer = details.match(/Windows NT \d\d.\d/);
+		var device = (details.split(andVer+";")[1]).split(") AppleWebKit");
+		txt += "<h4>Detected details are: </h4>" + "<p>Android Version: " + andVer + "</p>" + "<p>Device: " + device[0] + "</p>";
 		document.getElementById('displayDevice').innerHTML = txt;
 	}
 	</script>
