@@ -332,14 +332,25 @@
 
 	<script type="text/javascript">
 		function detectDevice() {
-		var txt = "";
-		var details = navigator.userAgent;		
-		var andVer = details.match(/Android \d.\d.\d/); 
-		//var andVer = details.match(/Windows NT \d\d.\d/);
-		var device = (details.split(andVer+";")[1]).split(") AppleWebKit");
-		txt += "<h4>Detected details are: </h4>" + "<p>Android Version: " + andVer + "</p>" + "<p>Device: " + device[0] + "</p>";
-		document.getElementById('displayDevice').innerHTML = txt;
-	}
+			var device;
+			var platform;
+			var version;
+			var details = navigator.userAgent;
+			var andVer = details.match(/Android \d.\d.\d/); 
+			var winVer = details.match(/Windows NT \d\d.\d/);
+			if (winVer==null) {
+				device = (details.split(andVer+";")[1]).split(") AppleWebKit");
+				platform = "Android";
+				version = andVer;
+			}
+			else {
+				device = (details.split(winVer+";")[1]).split(") AppleWebKit");
+				platform = "Windows";
+				version = winVer;
+			}
+			var txt = "<h4>Detected details are: </h4>" + "<p>"+ platform + " Version: " + version + "</p>" + "<p>Device: " + device[0] + "</p>";
+			document.getElementById('displayDevice').innerHTML = txt;
+		}
 	</script>
 
 	</html>
